@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Equalheight</title>
+
+	<style>
+		div{
+			border: 2px solid green;
+			float: left;
+			max-width: 200px;
+			margin: 10px;
+			padding: 5px;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptatum voluptates, alias quisquam adipisci iste, eligendi ipsum incidunt cum, quasi ex, praesentium placeat in. Cum quos tempora, soluta facere nobis.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptatum voluptates, alias quisquam adipisci iste, eligendi ipsum incidunt cum, quasi ex, praesentium placeat in. Cum quos tempora, soluta facere nobis.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptatum voluptates, alias quisquam adipisci iste, eligendi ipsum incidunt cum, quasi ex, praesentium placeat in. Cum quos tempora, soluta facere nobis.
+	</div>
+
+	<div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptatum voluptates, alias quisquam adipisci iste, eligendi ipsum incidunt cum, quasi ex, praesentium placeat in. Cum quos tempora, soluta facere nobis.
+	</div>
+	<div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptatum voluptates, alias quisquam adipisci iste, eligendi ipsum incidunt cum, quasi ex, praesentium placeat in. Cum quos tempora, soluta facere nobis.
+	</div>
+	<div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptatum voluptates, alias quisquam adipisci iste, eligendi ipsum incidunt cum, quasi ex, praesentium placeat in. Cum quos tempora, soluta facere nobis.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptatum voluptates, alias quisquam adipisci iste, eligendi ipsum incidunt cum, quasi ex, praesentium placeat in. Cum quos tempora, soluta facere nobis.
+	</div>
+	<div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptatum voluptates, alias quisquam adipisci iste, eligendi ipsum incidunt cum, quasi ex, praesentium placeat in. Cum quos tempora, soluta facere nobis.
+	</div>
+	<div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptatum voluptates, alias quisquam adipisci iste, eligendi ipsum incidunt cum, quasi ex, praesentium placeat in. Cum quos tempora, soluta facere nobis.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptatum voluptates, alias quisquam adipisci iste, eligendi ipsum incidunt cum, quasi ex, praesentium placeat in. Cum quos tempora, soluta facere nobis.
+	</div>
+
+	<script src="jquery-1.11.3.js"></script>
+	<script src="Equalheight.js"></script>
+
+	<script>
+		$( document ).ready( function() {
+
+			var element = 'div';
+
+			getMaxHeight( element );
+
+			$( window ).resize( function(){
+				getMaxHeight( element );
+			} );
+
+		} );
+	</script>
+
+</body>
+</html>
